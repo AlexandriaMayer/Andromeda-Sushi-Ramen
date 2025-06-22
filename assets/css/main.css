@@ -91,7 +91,7 @@ input, select, textarea {
 		background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
 		background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
 		background-image: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)), url("images/bg01.png");
-		background-color: #f7f7f7;
+		background-color: #060214;
 		background-position: top left, top left;
 		background-repeat: repeat-x, repeat;
 		background-size: 100% 30em, auto;
@@ -122,7 +122,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #0090c5;
+		color: #a9aef7;
 		text-decoration: underline;
 	}
 
@@ -131,7 +131,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #444;
+		color: #87868c;
 		font-weight: 800;
 	}
 
@@ -154,7 +154,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #444;
+		color: #87868c;
 	}
 
 	i, em {
@@ -1491,7 +1491,7 @@ input, select, textarea {
 		font-weight: 800;
 		margin: 0 0 1em 0;
 		font-size: 0.8em;
-		color: #444;
+		color: #6b6a72;
 	}
 
 	form input[type="text"],
@@ -1511,7 +1511,7 @@ input, select, textarea {
 		form input[type="password"]:focus,
 		form select:focus,
 		form textarea:focus {
-			border-color: #0090c5;
+			border-color: #6c80f0;
 		}
 
 	form input[type="text"],
@@ -1577,8 +1577,8 @@ input, select, textarea {
 		}
 
 		table thead {
-			background: #404248;
-			color: #fff;
+			background: #87868c;
+			color: #383640;
 		}
 
 /* Image */
