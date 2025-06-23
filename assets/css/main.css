@@ -131,7 +131,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #87868c;
+		color: #bbbdf9;
 		font-weight: 800;
 	}
 
@@ -1938,9 +1938,9 @@ input, select, textarea {
 	}
 
 		#logo h1 {
-			background: #ff4486;
+			background: #5372ed;
 			color: #fff;
-			border-radius: 6px;
+			border-radius: 16px;
 			font-family: 'Oleo Script', serif;
 			font-weight: 400;
 			padding: 0.25em 0.2em 0.25em 0.2em;
