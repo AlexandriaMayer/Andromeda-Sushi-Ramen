@@ -142,7 +142,7 @@ input, select, textarea {
 		}
 
 	h2 {
-		font-size: 2.25em;
+		font-size: 2em;
 		margin: 0 0 1.1em 0;
 		line-height: 1em;
 	}
@@ -214,6 +214,18 @@ input, select, textarea {
 
 	.last > p{
 		color: #ada7e9
+	}
+/* ACM's buttons */ 
+
+	.dine-in{
+		border: solid rgb(88, 50, 224) 4px;
+		background-color: rgb(43, 11, 158);
+		font-size: 24px;
+	}
+	.order-online{
+		border: solid rgb(223, 9, 223) 4px;
+		background-color: rgb(160, 5, 160);
+		font-size: 24px;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1694,7 +1706,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #580956;
+			background: #460844;
 			background: rgba(0, 0, 0, 0.05);
 			color: #d590e9;
 		}
