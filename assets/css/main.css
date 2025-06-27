@@ -97,7 +97,7 @@ input, select, textarea {
 		background-size: 100% 30em, auto;
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13pt;
-		color: #696969;
+		color: #bad8ff;
 		font-weight: 300;
 		line-height: 2.25em;
 	}
@@ -116,7 +116,7 @@ input, select, textarea {
 	input, select, textarea {
 		font-family: 'Open Sans', sans-serif;
 		font-size: 13pt;
-		color: #696969;
+		color: #d4d9f0;
 		font-weight: 300;
 		line-height: 2.25em;
 	}
@@ -209,7 +209,7 @@ input, select, textarea {
 		color: #ada7e9;
 	}
 	#header-2 > p{
-		color: #ada7e9
+		color: #cfccee
 	}
 
 	.last > p{
@@ -226,6 +226,30 @@ input, select, textarea {
 		border: solid rgb(223, 9, 223) 4px;
 		background-color: rgb(160, 5, 160);
 		font-size: 24px;
+	}
+
+/* ACM's menu items */
+	.menu-section{
+		display:flex;
+		border: solid red 2px;
+	}
+	.menu-table{
+		display: grid;
+		border: solid orange 2px; 
+		grid-template-columns: repeat(auto-fit, minmax(300p, 1fr));
+		grid-template-rows: repeat(auto-fit, 4fr);
+		gap: 1em;
+		justify-content: center;
+	}
+	.menu-item{
+		display: flex;
+		flex-direction: column;
+		border: solid yellow 2px;
+	}
+	.item-title{
+		display: flex;
+		justify-content: space-between;
+		border: solid green 2px;
 	}
 
 		@media screen and (max-width: 1680px) {
