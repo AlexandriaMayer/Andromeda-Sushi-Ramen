@@ -229,16 +229,27 @@ input, select, textarea {
 	}
 
 /* ACM's menu items */
+	.tabs-title{
+		display:flex;
+		flex-direction:row;
+		justify-content: space-evenly;
+	}
 	.menu-section{
 		display:flex;
+		flex-direction:column;
 		border: solid red 2px;
+		justify-content: space-evenly;
+		align-items:center;
+	}
+	.menu-section > h2{
+		align-self:center;
 	}
 	.menu-table{
 		display: grid;
 		border: solid orange 2px; 
-		grid-template-columns: repeat(auto-fit, minmax(300p, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		grid-template-rows: repeat(auto-fit, 4fr);
-		gap: 1em;
+		gap: 2em;
 		justify-content: center;
 	}
 	.menu-item{
