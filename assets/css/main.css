@@ -229,35 +229,66 @@ input, select, textarea {
 	}
 
 /* ACM's menu items */
-	.tabs-title{
+	#main-menu-title{
+		display: flex;
+		align-self:center;
+	}
+	.tabs-container{
+		position:sticky;
+		top: -2em;
+		border: solid #ada7e9 2px;
+		display: block;
+		border-bottom-left-radius: 1em;
+		border-bottom-right-radius: 1em;
+		background: #4f1760;
+	}
+	/* I think if I have too many menu tabs for one page, it's worth switching the display to a grid. alteratively, wrap the elements in flexbox*/
+	#tabs-title{
 		display:flex;
 		flex-direction:row;
 		justify-content: space-evenly;
+		font-size: 1.5em;
+		list-style: none;
+		margin-top: 1.5em;
+	}
+	
+	.menu-tab{
+		border: solid #ada7e9 2px;
+		border-radius: 1em;
+		background-color: #42128a;
+	}
+	.menu-tab:hover {
+		background: #5d23b6;
+	}
+	.menu-tab > a{
+		text-decoration: none;
+		font-weight: 700;
+		margin-right: 0.5em
 	}
 	.menu-section{
 		display:flex;
 		flex-direction:column;
-		border: solid red 2px;
 		justify-content: space-evenly;
 		align-items:center;
+		padding-top: 2em
 	}
 	.menu-table{
+		border: solid #ada7e9 1px;
+		border-radius: 1em;
 		display: grid;
-		border: solid orange 2px; 
 		grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 		grid-template-rows: repeat(auto-fit, 4fr);
 		gap: 2em;
 		justify-content: center;
+		padding:1em
 	}
 	.menu-item{
 		display: flex;
 		flex-direction: column;
-		border: solid yellow 2px;
 	}
 	.item-title{
 		display: flex;
 		justify-content: space-between;
-		border: solid green 2px;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -2076,7 +2107,7 @@ input, select, textarea {
 				}
 
 	.dropotron {
-		background: #501c32;
+		background: #361221;
 		letter-spacing: 0.025em;
 		color: #ffabd1;
 		text-decoration: none;
