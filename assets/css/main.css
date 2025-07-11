@@ -291,6 +291,12 @@ input, select, textarea {
 		justify-content: space-between;
 	}
 
+/* ACM's location styling */
+	article > h2 {
+		display:flex;
+		align-self: center;
+		justify-self: center;
+	}
 		@media screen and (max-width: 1680px) {
 
 			.container {
