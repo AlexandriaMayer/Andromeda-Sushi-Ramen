@@ -297,6 +297,14 @@ input, select, textarea {
 		align-self: center;
 		justify-self: center;
 	}
+	#locations-list{
+		list-style:none;
+	}
+	#location-title{
+		font-size: 2em;
+		font-weight: 600;
+		text-decoration: none;
+	}
 		@media screen and (max-width: 1680px) {
 
 			.container {
