@@ -339,12 +339,7 @@ input, select, textarea {
 		background-color: #424ab3;
 	}
 	.location-card{
-		display:none;
-		overflow:hidden;
 		transition: max-height 0.3s;
-		max-height: 0;
-		padding-left:0.5em;
-		padding-top:0.5em;
 		background-color: #3c065c;
 		border-radius:0.5em;
 	}
@@ -353,9 +348,9 @@ input, select, textarea {
 		color: white;
 		position:relative;
 	}
-	.location-card:target{
-		max-height: 10em;
-	}
+	/*.location-card.open{
+		max-height: 8em;
+	}*/
 	
 		@media screen and (max-width: 1680px) {
 
