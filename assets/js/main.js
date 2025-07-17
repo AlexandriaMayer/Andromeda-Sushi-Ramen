@@ -87,7 +87,7 @@
 		 address: "1016 N Charles St",
 		 city: "Baltimore",
 		 state: "MD",
-		 zip: "22201",
+		 zip: " 21201",
 		 phone: "(443) 366-2467"
 		},
 		{
@@ -111,3 +111,22 @@
 	]
 
 })(jQuery);
+
+function accordion(){
+	const acc = document.getElementsByClassName("location-item-title");
+	for (let i = 0; i < acc.length; i++){
+		acc[i].addEventListener("click", function(){
+			this.classList.toggle("active")
+		})
+	let panel = this.nextElementSibling;
+	if (panel.style.display === "block"){
+		panel.style.display = "none";
+	} else {
+		panel.style.display = "block";
+	}
+	
+	;
+	
+	}
+}
+// accordion();

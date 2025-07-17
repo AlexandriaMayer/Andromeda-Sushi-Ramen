@@ -299,12 +299,64 @@ input, select, textarea {
 	}
 	#locations-list{
 		list-style:none;
+		padding:1em;
 	}
-	#location-title{
+	#location-list-title{
 		font-size: 2em;
 		font-weight: 600;
 		text-decoration: none;
+		padding: 1em;
 	}
+	.location-item-title{
+		display:block;
+		list-style: none;
+		border: 2px solid rgb(106, 85, 226);
+		color: white;
+		background-color: #2b4097;
+		text-align:center;
+		border-radius: 0.25em;
+		padding:0.25em;
+		overflow: hidden;
+		text-decoration: none;
+		font-size:1.5em;
+		font-weight: 600;
+		cursor: pointer;
+		width: 100%;
+		outline: none;
+		transition: 0.4s
+	}
+	/*.location-item-title::before{
+		content:'';
+		position: absolute;
+		width: 1em;
+		height: 1em;
+		background-color: #2b4097;
+		left: 1.5em;
+		bottom: -0.5em;
+		transform: rotate(45deg);
+	}*/
+	.active, .location-item-title:hover{
+		background-color: #424ab3;
+	}
+	.location-card{
+		display:none;
+		overflow:hidden;
+		transition: max-height 0.3s;
+		max-height: 0;
+		padding-left:0.5em;
+		padding-top:0.5em;
+		background-color: #3c065c;
+		border-radius:0.5em;
+	}
+	.location-card > p{
+		display:block;
+		color: white;
+		position:relative;
+	}
+	.location-card:target{
+		max-height: 10em;
+	}
+	
 		@media screen and (max-width: 1680px) {
 
 			.container {
