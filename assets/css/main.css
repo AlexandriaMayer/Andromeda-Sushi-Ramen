@@ -2321,6 +2321,15 @@ input, select, textarea {
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
+		/* ACM's navbar changes*/
+		    #header{
+				position: static;
+                display: grid;
+                  grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 1em;
+                justify-items: center;
+            }
 
 	}
 
