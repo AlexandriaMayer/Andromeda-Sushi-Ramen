@@ -2322,14 +2322,17 @@ input, select, textarea {
 				font-size: 11pt;
 			}
 		/* ACM's navbar changes*/
-		    #header{
+			#nav{
 				position: static;
+			}
+		    #header{
                 display: grid;
                   grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr;
                 gap: 1em;
                 justify-items: center;
             }
+			
 
 	}
 
