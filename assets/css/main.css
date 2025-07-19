@@ -351,6 +351,9 @@ input, select, textarea {
 	/*.location-card.open{
 		max-height: 8em;
 	}*/
+
+	/* Leaflet mapping */
+	#map { height: 480px; }
 	
 		@media screen and (max-width: 1680px) {
 
