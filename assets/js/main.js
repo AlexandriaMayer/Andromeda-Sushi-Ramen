@@ -109,7 +109,11 @@
 		 phone: "(917) 401-3041"
 		}
 	]
-	
+	const asrMap = L.map('map').setView([51.505, -0.09], 13);
 
 	(jQuery);
 })
+
+function leaflet(){
+	const asrMap = L.map('map').setView([51.505, -0.09], 13);
+}
