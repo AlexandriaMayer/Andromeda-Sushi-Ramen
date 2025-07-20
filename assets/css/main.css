@@ -353,6 +353,8 @@ input, select, textarea {
 	}*/
 
 	/* Leaflet mapping */
+
+
 	#map { height: 480px; }
 	
 		@media screen and (max-width: 1680px) {
@@ -2453,7 +2455,7 @@ input, select, textarea {
 		/* Nav */
 
 			#nav {
-				display: none;
+				display: block;
 			}
 
 		/* Banner */
@@ -2703,6 +2705,23 @@ input, select, textarea {
 				border: 0 !important;
 				padding: 0 !important;
 				margin: 0 !important;
+			}
+		/* ACM's menu changes */
+			#nav{
+				position: static;
+			}
+		    #header{
+                display: grid;
+                  grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 0.5em;
+                justify-items: center;
+            }
+			.nav-row-1{
+				grid-row: 2;
+			}
+			.nav-row-2{
+				grid-row: 3;
 			}
 
 		/* Actions */
