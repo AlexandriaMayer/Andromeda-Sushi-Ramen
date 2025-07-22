@@ -240,7 +240,7 @@ input, select, textarea {
 		display: block;
 		border-bottom-left-radius: 1em;
 		border-bottom-right-radius: 1em;
-		background: #4f1760;
+		background: #290833;
 	}
 	/* I think if I have too many menu tabs for one page, it's worth switching the display to a grid. alteratively, wrap the elements in flexbox*/
 	#tabs-title{
@@ -355,7 +355,7 @@ input, select, textarea {
 	/* Leaflet mapping */
 
 
-	#map { height: 480px; }
+	#map { height: 640px; }
 	
 		@media screen and (max-width: 1680px) {
 
@@ -2455,7 +2455,7 @@ input, select, textarea {
 		/* Nav */
 
 			#nav {
-				display: block;
+				display: none;
 			}
 
 		/* Banner */
@@ -2594,7 +2594,7 @@ input, select, textarea {
 				top: 0;
 				width: 275px;
 				z-index: 10002;
-				background: #65203a;
+				background: #1c0322;
 				box-shadow: inset -3px 0px 0px 0px #f8aaeb;
 				padding: 0 23px 0 20px;
 			}
@@ -2605,7 +2605,7 @@ input, select, textarea {
 					height: 54px;
 					line-height: 54px;
 					border-top: solid 1px #e8e8e8;
-					color: #696969;
+					color: #f3efef;
 				}
 
 					#navPanel .link:first-child {
@@ -2638,7 +2638,7 @@ input, select, textarea {
 				}
 
 				#navPanel .depth-0 {
-					color: #444;
+					color: #ece9e9;
 					font-weight: 800;
 				}
 

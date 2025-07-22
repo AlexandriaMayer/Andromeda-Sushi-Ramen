@@ -109,11 +109,11 @@
 		 phone: "(917) 401-3041"
 		}
 	]
-	const asrMap = L.map('map').setView([51.505, -0.09], 13);
+	const asrMap = L.map('map').setView([39.973, -75.133], 8);
 
-	(jQuery);
+	L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    maxZoom: 19,
+    attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"}).addTo(asrMap);
 })
 
-function leaflet(){
-	const asrMap = L.map('map').setView([51.505, -0.09], 13);
-}
+(jQuery);
