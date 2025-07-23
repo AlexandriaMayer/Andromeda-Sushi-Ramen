@@ -111,7 +111,7 @@
 	]
 	const asrMap = L.map('map').setView([39.973, -75.133], 8)
 	const sushiIcon = L.icon({
-			iconURL: "/workspaces/Andromeda-Sushi-Ramen/images/icons8-kawaii-sushi-48.png",
+			iconUrl: "images/icons8-kawaii-sushi-48.png",
 			iconSize: [48, 48],
 			iconAnchor: [0, 0]
 		})
@@ -228,10 +228,24 @@
 								"marker-size":"medium",
 								"marker-symbol" : ""},}]
 	}
+	L.geoJSON(asrGeoJSON,{
+		onEachFeature: function(feature, layer){
+			layer.bindPopup(feature.properties.name + " <br>" + 
+				feature.properties.Address + ",<br>" +
+				feature.properties.City + ", " + 
+				feature.properties.State + " " +
+				feature.properties.ZIP + " <br>" +
+				"Phone: " + feature.properties.phone_number )
+		}
+	}
+	).addTo(asrMap)
 
-	L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+	const asrIcon = L.Marker({icon: sushiIcon}).addTo(asrMap)
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors"}).addTo(asrMap);
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(asrMap);
 })
 
 (jQuery);
