@@ -113,9 +113,10 @@
 	const sushiIcon = L.icon({
 			iconUrl: "images/icons8-kawaii-sushi-48.png",
 			iconSize: [48, 48],
-			iconAnchor: [0, 0]
+			iconAnchor: [24, 24]
 		})
 		;
+	// L.Icon.Default.prototype.options.imagePath = 'images/icons8-kawaii-sushi-48.png'
 	const asrGeoJSON = {
  		 "type" : "FeatureCollection",
  		 "features" : [
@@ -228,8 +229,11 @@
 								"marker-size":"medium",
 								"marker-symbol" : ""},}]
 	}
+	
+	// const asrMarker = L.marker([0,0], {icon: sushiIcon}).addTo(asrMap)
 	L.geoJSON(asrGeoJSON,{
 		onEachFeature: function(feature, layer){
+			layer.options.icon = sushiIcon;
 			layer.bindPopup(feature.properties.name + " <br>" + 
 				feature.properties.Address + ",<br>" +
 				feature.properties.City + ", " + 
@@ -240,7 +244,7 @@
 	}
 	).addTo(asrMap)
 
-	const asrIcon = L.Marker({icon: sushiIcon}).addTo(asrMap)
+	
 
 	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
