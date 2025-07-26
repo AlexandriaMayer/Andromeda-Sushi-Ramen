@@ -348,12 +348,16 @@ input, select, textarea {
 		color: white;
 		position:relative;
 	}
-	/*.location-card.open{
-		max-height: 8em;
-	}*/
 
 	/* Leaflet mapping */
 
+	/* Contact Page */
+
+	.contact-container{
+		display:flex;
+		justify-content: center;
+		text-align:center;
+	}
 
 	#map { height: 640px; }
 	
