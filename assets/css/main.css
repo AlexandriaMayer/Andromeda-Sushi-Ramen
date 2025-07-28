@@ -1387,7 +1387,7 @@ input, select, textarea {
 				display: flex;
 				flex-wrap: wrap;
 				box-sizing: border-box;
-				align-items: stretch;
+				align-items: center;
 			}
 
 				.row > * {
@@ -1623,9 +1623,13 @@ input, select, textarea {
 						.row.gtr-200.gtr-uniform > * {
 							padding-top: 40px;
 						}
-
+		.image-box{
+			aspect-ratio: 1/1;
 		}
 
+
+		}
+		
 /* Section/Article */
 
 	section, article {
