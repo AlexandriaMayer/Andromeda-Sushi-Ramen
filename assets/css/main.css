@@ -2312,6 +2312,14 @@ input, select, textarea {
 		#copyright a {
 			color: inherit;
 		}
+	.item-title > h4{
+		padding: 0.5em;
+		border-radius: 1em;
+		background-color: #684fcb;
+		color: #ece9e9;
+		width: 4em;
+		text-align: center;
+	}
 
 /* XLarge */
 
