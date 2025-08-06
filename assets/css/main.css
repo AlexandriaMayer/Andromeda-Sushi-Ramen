@@ -250,6 +250,7 @@ input, select, textarea {
 		font-size: 1.5em;
 		list-style: none;
 		margin-top: 1.5em;
+		flex-wrap: wrap;
 	}
 	
 	.menu-tab{
