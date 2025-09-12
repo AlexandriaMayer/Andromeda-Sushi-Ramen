@@ -199,6 +199,14 @@ input, select, textarea {
 		max-width: 100%;
 		width: 1400px;
 	}
+	.gallery-container {
+		margin: 0 auto;
+		max-width: 100%;
+		width: 1400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
 
 /* Box features */
 
@@ -409,6 +417,7 @@ input, select, textarea {
 		box-sizing: border-box;
 		align-items: stretch;
 		justify-content: space-around;
+		flex-direction: row;
 	}
 
 		.row > * {
